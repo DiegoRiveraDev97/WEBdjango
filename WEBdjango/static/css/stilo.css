@@ -1,0 +1,234 @@
+
+body{
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    
+}
+
+.col-sm{
+    background-color: ;
+    
+    margin-top: 5px;
+
+}
+h1{
+    font-family:'Source Serif Pro', serif;;
+}
+
+.marca{
+
+    background-color:#D57453; 
+    
+}
+.section{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.btn{
+    margin: 2px;
+}
+/*----------------------------- estilos de las imagenes --------------------*/
+.img1{
+    width: 13%;
+    margin: 15px;
+    border-radius: 35%;
+}
+.img2{
+    width: 100%;
+    margin: 15px;
+    border-radius: 10%;
+}
+.img3{
+    width: 100%;
+    height: 280px;
+    margin: 15px;
+    border-radius: 10%;
+}
+.img4{
+    width: 100%;
+    margin: 15px;
+    border-radius: 10%;
+}
+.img5{
+    width: 90%;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+.img6{
+    width: 90%;
+    height:300px ;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+.img7{
+    width: 90%;
+    height:300px ;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+
+
+.face{
+    width: 13%;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+
+
+
+.contenedor{
+    width: 70%;
+    /*margin: auto;*/
+    overflow: hidden;
+    background-color: yellowgreen;
+    margin: auto;
+    overflow: hidden;
+}
+
+#cajas{
+    margin-top: 20px;
+}
+#cajas .caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    
+
+}
+#cajas .caja img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid blanchedalmond ;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.80);
+
+}
+
+.caja img:hover{
+    transform: scale(1.5);
+
+
+}
+
+
+
+#cajas .caja h1,h2,h3{
+    color: blanchedalmond;
+}
+.contenedor1{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: green;
+
+}
+
+article#col-principal{
+    float: left;
+    width: 65%;
+}
+
+
+
+
+
+aside#lateral1{
+    float: right;
+    width: 20%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+aside#lateral2{
+    float: right;
+    width: 20%;
+    margin-top: 5%;
+}
+.oscuro{
+    padding: 15px;
+    margin-top: 60px;
+    color:  blanchedalmond ;
+    background-color: #2e1a06;
+    margin-bottom: 10px;
+    align-content: center;
+    border-radius: 10px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: blanchedalmond;
+    background-color: #2e1a06;
+    text-align: center;
+    border-top: 2px solid blanchedalmond
+}
+
+
+
+--------------------------------------------------------
+/*TODO LO QUE ESTA HACIA ABAJO SON LOS ESTILOS COPIADOS DE LA OTRA PAGINA PARA LA HOJA DE T
+TODOS LOS PRODUCTOS*/
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+header{
+    background-color: #2e1a06;
+    color:blanchedalmond;
+    text-shadow: 3px -3px black;
+    padding-top: 30px;
+    min-height: 70%;
+    border-bottom: 5px solid blanchedalmond;
+}
+header .resaltado, header .actual a{
+    color: #734222;
+    font-weight: bold;
+    font-family: 'Gentium Plus';
+}
+
+
+
+
+#cajas{
+    margin-top: 20px;
+}
+#cajas .caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    
+
+}
+#cajas .caja img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid blanchedalmond ;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.80);
+
+}
+
+.caja img:hover{
+    transform: scale(1.5);
+
+
+}
+
+
+/* ESTILOS DE JAVASCRIPT*/
+
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+.
+#map {
+    height: 500px;
+    width: 100%;
+   
+
+}

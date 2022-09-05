@@ -1,0 +1,77 @@
+CREAR UN PROYECTO:
+1. EN urls.py, agregar path:
+
+	from . import views
+	...
+	path('', views.home, name="home"),
+--------------
+2. Crear archivo 'views.py' en carpeta del proyecto:
+
+	from django.shortcuts import render
+
+	def home(request):
+    		return render(request, 'home.html')
+-----------
+3. En la raiz, crear folder 'templates' (no en subcarpeta del mismo nombre)
+4. En 'templates' crear 'home.html' e incluir las etiquetas necesarias
+
+-----------
+5. Registar la carpeta en 'settings.py':
+	TEMPLATES = [
+    	{
+      	  ...
+      	  'DIRS': ['templates'],	
+	  ...
+---------
+
+6. ARCHIVOS ESTATICOS
+6.1 en subcarpeta con el nombre del proyecto, crear carpeta 'static'
+6.2 dentro, crear subcarpetas 'css', 'fonts', 'images', 'js'
+6.3 en 'settings.py' 
+	STATIC_URL = '/static/'
+	STATIC_ROOT = BASE_DIR /'static'
+	STATICFILES_DIRS = [
+	    '<nombre-proyecto>/static'
+	]
+6.4 en consola batch, bajar el servidor y ejecutar:
+
+>python manage.py collectstatic
+
+6.5 En los templates:
+- al inicio {% load static %}
+
+- y en los enlaces, las rutas relativas:  href="{% static 'images/favicon.ico'%}"
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+FACTORIZACION COMPONENTES
+AGREGAR BLOQUES HTML DE ENCABEZADO, PIE, ETC.
+
+Crear base.html:
+
+{% load static%}
+
+...insertar codigo html fijo (que siempre será el mismo)
+
+{% block content %}
+
+{% endblock %}
+insertar codigo html fijo (que siempre será el mismo)
+-----------------
+En los templates, al inicio, agregar:
+
+{% extends 'base.html' %}
+{% load estatic %}
+
+{% block content %}
+...insertar codigo html del template
+
+{% endblock %}
+
+-----------------------
+Dentro de carpeta 'templates' crear carpeta 'includes'
+	crear archivos footer.html, navbar.html, etc con segmentos de codigo hml, segun.
+	en cada archivo agregar {% load estatic %}, si esta referenciando
+Agregar a base.html:
+	{% include 'includes/navbar.html' %}
+
+etc. en el lugar que se desee que aparezca
