@@ -13,3 +13,4 @@ class Heladeria (models.Model):
     def __str__(self):
         return self.nombreHeladeria
     
+# ajaha
