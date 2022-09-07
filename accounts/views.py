@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def registrarse(request):
-    pass
+    return render(request, 'Gerente/registro.html')
