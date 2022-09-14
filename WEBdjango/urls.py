@@ -21,7 +21,14 @@ from accounts import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    
+    path('nosotros/', views.quienesSomos, name="quienesSomos"),
+
+    path('categoria/', views.productos2, name="productos2"),
+    path('servi/', views.servicios, name="servicios"),
+    path('servi2/', views.servicios2, name="servicios2"),
+    path('vision/', views.vision, name="vision"),
+    path('contactenos/', views.contactenos, name="contactenos"),
+    path('Categoria/', views.productos, name="productos"),
     path('accounts/',include('accounts.urls')),
     
 ]

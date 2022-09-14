@@ -1,4 +1,9 @@
 from django.db import models
+from django.db import models
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+
+# Create your models here.
+from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 
@@ -80,5 +85,3 @@ class Account(AbstractBaseUser):
 
     class Meta:
         verbose_name_plural = "Usuarios"
-        
-#JUAN DIEGO RIVERA MENESES

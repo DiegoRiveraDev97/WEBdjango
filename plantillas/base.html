@@ -20,7 +20,7 @@
     </script>
     
 </head>
-<body>
+<body background="{% static 'img/helado_extravagante.jpg' %}">
 #Estos son comentarios para hacer pruebas de cambios
   {% include 'includes/head.html' %}
 
@@ -29,6 +29,18 @@
 
 
   {% include 'includes/nav.html'%}
+  
+  {% if alarma %}
+  
+  <div class="alarma">
+      <p>{{ alarma}} </p>
+  </div>
+  {% endif %}
+  {% if user.id is None %}
+  <h1 class="resultado">Visitante</h1>
+                {% else %}
+                <h1 class="resultado">{{ user.username }} </h1>
+                {% endif %}
 
   <!--section principal-->
   {% block content %}

@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <center>
+                        <h5>Formulario de Registro</h5>
+                    </center>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="text">Nombres y Apellidos</label>
+                                <input type="text" class="form-control" id="inputEmail4"
+                                    placeholder="Nombres y Apellidos" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Correo Electronico</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="Correo Electronico" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="text">Telefono de Contacto</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Telefono"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="text">Direccion</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Direccion"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="text">Documento</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Documento"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="text">Ciudad de residencia</label>
+                                <input type="text" class="form-control" id="inputEmail4"
+                                    placeholder="Ciudad de residencia" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="text">Contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="Contraseña"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="text">Confirmar Contraseña</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Confirmar Contraseña" required>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-auto my-1">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Seleccione su genero</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Genero...</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                                <option value="3">Transgenero</option>
+                            </select>
+                        </div>
+
+
+
+                        <center><button type="submit" class="btn btn-primary">Registrar Datos</button></center>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    {% endblock  %}
+
+
+
