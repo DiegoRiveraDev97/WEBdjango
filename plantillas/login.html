@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm">
+                <center>
+                    <h5>Formulario de Ingreso</h5>
+                </center>
+
+                <center>
+                    <form action="{%url 'login' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Correo Electronico</label>
+                                <input type="email" class="form-control" name="email" id="inputEmail4"
+                                    placeholder="Correo Electronico" required>
+                            </div>
+                        </div>
+                        
+                            <div class="form-group col-md-6">
+                                <label for="text">Contraseña</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña"
+                                    required>
+                            </div>
+                            
+                        </div>
+                        
+    
+                        <center><button type="submit" class="btn btn-primary" name="registrarse"  value="ingresar"> Ingresar</button></center>
+                    </form>
+                </center>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+{% endblock  %}
+
+
+

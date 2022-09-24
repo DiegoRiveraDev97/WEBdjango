@@ -1,0 +1,95 @@
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light border-3 border-bottom border-primary fondo-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">IbaGelato</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Servicios</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'servicios'%}">Eventos empresariales e Infantiles</a></li>
+              <li><a class="dropdown-item" href="{% url 'servicios2'%}">Ventas al Por Mayor y al Detal</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Productos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'productos' %}">Platos y Toppings</a></li>
+              <li><a class="dropdown-item" href="{% url 'productos2'%}">Bebidas clasicas y con Alcohol</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+            </ul>
+          </li>
+
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Quienes somos</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'quienesSomos'%}">Nuestra Misión</a></li>
+              <li><a class="dropdown-item" href="{% url 'vision'%}">Nuestra Visión</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Contactenos</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contactenos'%}">Contáctenos</a>
+          </li>
+
+          {% if user.id is None %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'registro'%}">Registrarse</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login'%}">Login</a>
+          </li>
+          {% else %}
+
+          {% endif %}
+          {% if user.id is None %}
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout'%}">Logout</a>
+          </li>
+          {% endif %}
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'ver_carrito' %}">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-plus" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                <path d="M15 6h6m-3 -3v6" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<center>
+  <div class="mb-3 descripcion">
+    <h4>Descripción del Producto</h4>
+  </div>
+</center>
+
+<center>
+
+  <div class="row">
+    <center>
+      <div class="card col-6 offset-3">
+        <img src="{{ producto.imagen.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{producto.nombre}}</h5>
+          <p class="card-text">{{producto.descripcion}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">${{producto.precio}}/{{producto.unidad}}</li>
+        </ul>
+        {% if user.id is None %}
+        
+        {% else %}
+        <div class="card-body">
+          <a href="{% url 'carrito' producto.id %}" class="btn btn-success">Agregar al carrito</a>
+        </div>
+        {% endif %}
+
+        
+      </div>
+    </center>
+
+  </div>
+
+</center>
+{% endblock %}

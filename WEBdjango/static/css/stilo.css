@@ -1,0 +1,439 @@
+
+body{
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    
+}
+
+/*
+---------------------------codigo de el NAV------------
+*/
+
+.fondo-nav{
+
+    background-color: #71BAB1;
+}
+
+.col-sm{
+    
+    margin-top: 5px;
+
+}
+h1{
+    font-family:'Source Serif Pro', serif;
+    text-align: center;
+}
+h2{
+    font-family: Aref Ruqaa Ink, serif;
+}
+p{
+    text-align: center;
+    margin: 0px;
+    font-size: 22px;
+    font-family: serif;
+   
+}
+.slogan{
+margin-bottom: 0%;
+text-shadow: 0px 2px blue;
+font-weight: bolder;
+padding-bottom: 15px;
+}
+
+
+
+
+.marca{
+
+    text-align: center;
+    align-content: center;
+    
+}
+.section{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.btn{
+    margin: 10px;
+}
+/*----------------------------- estilos de las imagenes --------------------*/
+.img1{
+    width: 20%;
+    
+    border-radius: 35%;
+}
+.img2{
+    width: 50%;
+    margin: 15px;
+    border-radius: 35px;
+    height: 480px;
+}
+/*
+.im img{
+    width: 50%;
+    margin: 15px;
+    border-radius: 35px;
+}
+*/
+
+.img3{
+    width: 50%;
+    height: 480px;
+    margin: 15px;
+    border-radius: 35px;
+    
+}
+.img4{
+    width: 100%;
+    margin: 15px;
+    border-radius: 10%;
+}
+.img5{
+    width: 90%;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+.img6{
+    width: 90%;
+    height:300px ;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+.img7{
+    width: 90%;
+    height:300px ;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+
+
+.face{
+    width: 13%;
+    margin: 15px;
+    border-radius: 10%;
+
+}
+
+
+
+.contenedor{
+    width: 70%;
+    /*margin: auto;*/
+    overflow: hidden;
+    background-color: rgb(65, 120, 31);
+    margin: auto;
+    overflow: hidden;
+}
+
+#cajas{
+    margin-top: 20px;
+}
+#cajas .caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    
+
+}
+#cajas .caja img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid blanchedalmond ;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.80);
+
+}
+
+.caja img:hover{
+    transform: scale(1.5);
+
+
+}
+
+
+
+#cajas .caja h1,h2,h3{
+    color: blanchedalmond;
+}
+.contenedor1{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: green;
+
+}
+
+article#col-principal{
+    float: left;
+    width: 65%;
+}
+
+
+
+
+
+aside#lateral1{
+    float: right;
+    width: 20%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+aside#lateral2{
+    float: right;
+    width: 20%;
+    margin-top: 5%;
+}
+/* ---------------------ESTILOS PLANTILLA CONTACTENOS--------------*/
+.oscuro{
+    padding: 15px;
+    background-color: #71BAB1;
+    margin-bottom: 50px;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    
+    display: inline-block;
+    font-family: ;
+}
+.oscuro a{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+    background-color: #0d2033;
+    border-radius: 50%;
+    
+
+}
+.oscuro3{
+    padding: 15px;
+    background-color: #71BAB1;
+    margin-bottom: 40px;  
+    width: 40%; 
+    line-height: 40px;
+    border-radius: 50%;
+    line-height: 45px;
+    height: 140;
+}
+.oscuro3 a{
+    background-color: #0d2033;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 45px;
+    
+}
+.oscuro3 a:hover{
+    color: #ff9900;
+}
+/*---------------ESTILOS DE PLANTILLA VISION Y MISION -----------------*/
+
+.oscuro2{
+    padding: 15px;
+    background-color: #71BAB1;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    align-content: center;
+    
+    text-align: center;
+    border-radius: 10PX;
+    
+    
+    font-family: ;
+    
+}
+
+
+
+
+--------------------------------------------------------
+/*TODO LO QUE ESTA HACIA ABAJO SON LOS ESTILOS COPIADOS DE LA OTRA PAGINA PARA LA HOJA DE T
+TODOS LOS PRODUCTOS*/
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #71BAB1;
+
+}
+header{
+    background-color: #71BAB1;
+    color:blanchedalmond;
+    text-shadow: 1px -3px black;
+    padding-top: 0px;
+    min-height: 70%;
+    border-bottom: 5px solid blanchedalmond;
+}
+header .resaltado, header .actual a{
+    color: #ff9900;
+    font-weight: bold;
+    font-family: 'Gentium Plus';
+    font-size: 50px;
+}
+
+
+
+
+#cajas{
+    margin-top: 20px;
+}
+#cajas .caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    
+
+}
+#cajas .caja img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid blanchedalmond ;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.80);
+
+}
+
+.caja img:hover{
+    transform: scale(1.5);
+
+
+}
+
+
+/* ESTILOS DE JAVASCRIPT*/
+
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+.
+#map {
+    height: 500px;
+    width: 100%;
+   
+
+}
+/* --------------------CODIGO DE LA PLANTILLA PRODUCTOS--------------*/
+
+.prod{
+    align-content: center;
+}
+#centro{
+    
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+#centro1{
+    
+    
+    font-size: 35px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    
+}
+
+
+.img_producto{
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    
+}
+.table{
+    align-content: center;
+}
+.row{
+   align-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* -------------ESTILOS DE LAS PLATILLAS PRODUCTOS DETALLE------------*/
+
+/* ----------------------Codigo del footer---------------*/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 2px solid blanchedalmond
+}
+
+.pie-pagina{
+
+    width: 100%;
+    background-color: #74d2e7;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid: gap 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgfoot{
+    width: 46%;
+}
+.pie-pagina .grupo-1 .box h2{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 50%;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #ff9900;
+}
+.pie-pagina .grupo-2{
+    background-color: #71BAB1;
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 17px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

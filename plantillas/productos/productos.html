@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<center>
+    <div class="mb-3 descripcion">
+        <h4>Lista de Productos</h4>
+    </div>
+</center>
+
+
+    <div class="row">
+
+        <center>
+            <table class="table">
+                <tbody>
+                    {% for prod in productos %}
+                    <center>
+                        <tr class="prod">
+                            <td class="col-md-4" id="centro" ><img class="img_producto" id="centro" src="{{ prod.icono.url }}" alt="X"> </td>
+                            <td class="col-md-4" id="centro">{{prod.nombre}}</td>
+                            <td class="col-md-4" id="centro"><a  href="{% url 'producto' prod.id %}" type="button" class="btn btn-info">Ver Detalles</a></td>
+                        </tr>
+                    </center>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </center>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<center>
+    <div class="py-5 text-center">
+        <h2>Productos en carro</h2>
+    </div>
+
+</center>
+
+
+<center>
+    <table class="table" style="width:90%">
+
+        <thead>
+            <tr>
+                <th>Cantidad</th>
+                <th></th>
+                <th>Producto</th>
+                <th>Precio Unit.</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+
+        </thead>
+        <tbody>
+            {% for prod in carrito %}
+            <center>
+                <tr>
+                    <th><input type="number" name="cantidad" id="cantidad_{{prod.id}}" 
+                        onchange="cambiarCantidad({{prod.id}})" value="{{prod.cantidad}}" 
+                        min="1" style="width: 80px;">
+                    </th>
+
+
+                    <td><img src="{{ prod.icono.url }}" width="100px" alt="x"></td>
+                    <td>{{ prod.nombre }}</td>
+                    <td>{{prod.valor}}/{{prod.unidad}}</td>
+                    <td>{{prod.total}}</td>
+                    <td>
+                        <a href="{% url 'eliminar' prod.id %}" class="btn btn-danger btn-carrito">Eliminar</a>
+                        <a href="{% url 'producto' prod.id %}" class="btn btn-info btn-carrito">Detalle</a>
+                        
+                    </td>
+                </tr>
+            </center>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</center>
+
+<div class="col-6 offset-4 row justify-content-center border-bottom">
+
+    <div class="col-6 text-end">
+        <h6><strong>Subtotal</strong></h6>
+        <h6>Iva</h6>
+        <h6>Envio</h6>
+        <h6><strong>A pagar</strong></h6>
+    </div>
+    <div class="col-6 text-end">
+        <h6><strong>${{ subtotal }}</strong></h6>
+        <h6>${{iva}}</h6>
+        <h6>${{envio}}</h6>
+        <h6><strong>${{total}}</strong></h6>
+    </div>
+
+    <a href="#" class="btn btn-info btn-carrito">Pagar</a>
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+<!---<tr class="prod">
+                            <
+                            <td class="col-md-4" id="centro" >{{ prod.producto }}</td>
+                            <td class="col-md-4" id="centro">{{ prod.cantidad }}</td>
+                            <td class="col-md-4" id="centro">{{ prod.precio }}</td> 
+                        </tr> -->
