@@ -32,7 +32,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
 
+=======
+    
+    
+>>>>>>> d25b40b4b4ff32a5ab6c632653759299d6c3a2c4
     'accounts.apps.AccountsConfig',
     'appGerente',
     'appProducto',
